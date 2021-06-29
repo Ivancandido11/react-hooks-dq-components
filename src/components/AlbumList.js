@@ -2,9 +2,16 @@ import React from "react";
 import AlbumCard from "./AlbumCard";
 import { albums } from "../data/albums";
 
-function AlbumList() {
+function AlbumList(props) {
   return (
     <section className="albums">
+      {/* const albumsList = props.albums;
+  const listItems = albums.map((singleAlbum) =>
+    <li>{singleAlbum}</li>
+  )
+  return (
+    <ul>{listItems}</ul>
+  ) */}
       <AlbumCard
         name="Classic Tuna Cans Being Opened"
         image="https://target.scene7.com/is/image/Target/GUEST_360eeed2-1747-4b15-8394-a22c7cd12230?wid=488&hei=488&fmt=pjpeg"
@@ -26,7 +33,7 @@ function AlbumList() {
         genre="Dogs"
       />
     </section>
-  );
+  )
 }
 
 export default AlbumList;
